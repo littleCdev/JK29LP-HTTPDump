@@ -103,6 +103,49 @@ Response:
 ```
 
 ### Fourth request
+
+setting locale `POST http://192.168.0.1/locale`
+
+Raw
+```HTTP
+POST /locale HTTP/1.1
+Content-Type: application/json
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; ONE A2003 Build/MMB29M)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 30
+
+{"cc":"DE","realm":"DEAmazon"}
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 0
+```
+Response: Header 200 OK 
+
+
+### Fith request
+setting token `POST http://192.168.0.1/stoken`
+
+Raw
+```HTTP
+POST /stoken HTTP/1.1
+Content-Type: application/octet-stream
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; ONE A2003 Build/MMB29M)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 77
+
+.......L._.N:I....c.....G....|?L_w..}...$..%..,.O.........A....5...b.......$.
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 0
+´´´
+Response: Header 200 OK 
+
+### Sixth request
+
 configures the network
 `POST http://192.168.0.1/network`
 
